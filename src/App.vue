@@ -1,22 +1,15 @@
 <template>
   <div class="main">
-  <navbar></navbar>
-  
-    <button type="button" class="btn btn-success btn-circle btn-xl lap" style="z-index:9999"><span>CALL</span></button>
-    <a href="tel:8448448805">
-      <button type="button" class="btn btn-success btn-circle btn-xl mob" style="z-index:9999"><span>CALL</span></button></a>
     <transition name="fade">
       <router-view></router-view>
     </transition>
-
-      <foot></foot>
   </div>
 </template>
 
 <script>
   import home from './components/home'
-  import navbar from './components/navbar'
-  import foot from './components/footer'
+  // import navbar from './components/navbar'
+  // import foot from './components/footer'
   export default {
     data(){
       return {
@@ -24,9 +17,9 @@
       }
     },
     components:{
-
-      navbar:navbar,
-      foot:foot,
+      //
+      // navbar:navbar,
+      // foot:foot,
       home:home
     }
   }

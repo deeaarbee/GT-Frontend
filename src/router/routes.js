@@ -1,7 +1,7 @@
 import  home from '../components/home'
-import payment from '../components/payment'
+import single_article from '../components/single_article'
 
 export default[
   {path:'/',component:home},
-  {path:'/payment/:id',component:payment},
+  {path:'/single_article',component:single_article},
 ]
