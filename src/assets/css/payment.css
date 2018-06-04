@@ -1,0 +1,455 @@
+html, body {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: url("../images/cloudy-day.png");
+    background-size: 40% 40%;
+    width: 100%;
+    margin: auto;
+}
+
+.row{
+  margin: 0;
+}
+
+.mobile-courses{
+    display: none;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.description {
+    padding: 3% 0 0 0;
+    width: 100%;
+    margin-top: -3%;
+}
+
+.payment>h2 {
+    font-family: 'Overpass', sans-serif;
+    margin-top: 10%;
+    font-size: 300%;
+    background: none;
+    color: #ffc000;
+    text-align: left;
+}
+
+.payment>p {
+    margin-top: 1%;
+    font-size: 450%;
+    background: none;
+    color: #ffc000;
+    text-align: left;
+}
+
+.arrow{
+    margin-top: 1%;
+    font-size: 450%;
+    background: none;
+    color: #ffc000;
+    text-align: center;
+}
+
+#payment-age {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #636363;
+    opacity: 1;
+}
+
+#payment-location {
+    margin-top: -0.5%;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #636363;
+    opacity: 1;
+}
+
+#bundles-description{
+    margin-top: -0.5%;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #636363;
+    opacity: 1;
+    text-align: left;
+}
+
+
+
+#short-description {
+    margin-left: 18%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    width: 65%;
+    font-weight: 600;
+    color: #636363;
+    opacity: 1;
+}
+
+#combo-of {
+    margin-top: 1%;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    font-size: 25px;
+    color: #ffc000;
+    opacity: 1;
+}
+
+#bundle-courses {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #636363;
+    opacity: 1;
+    text-align: left;
+}
+
+#strike {
+    font-family: "Montserrat", sans-serif;
+    margin-top: -0.5%;
+    text-align: left;
+    color: #636363;
+    font-size: 25px;
+    text-decoration: line-through;
+    text-decoration-color: #ffc000;
+    opacity: 1;
+}
+
+#rate {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    margin-top: .5%;
+    text-align: left;
+    color: #ffc000;
+    opacity: 1;
+}
+
+#btn-1 {
+    margin: auto;
+    margin-top: 1%;
+    display: block;
+    background-color: #ffc000;
+    padding: 0.5% 1%;
+    border-radius: 10px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.header{
+    background: url("../images/awe.jpg");
+}
+
+.video-cont{
+    margin-top: 2%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.video-frame{
+    height: 30vh;
+    width: 30vw;
+}
+
+#btn-1:focus,
+.btn-2:focus,
+.btn-3:focus,
+.btn-sign:focus,
+#prospectus:focus {
+    outline: none !important;
+}
+
+#combo {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+  margin-left: 0;
+}
+
+#arrow {
+    color: #f4dd11;
+    font-size: 50%;
+}
+
+.courses-container {
+    width: 100%;
+}
+
+.courses {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.circle-courses {
+
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 3% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.shadow {
+    -webkit-box-shadow: -2px 4px 40px -6px rgba(0,0,0,0.59);
+    -moz-box-shadow: -2px 4px 40px -6px rgba(0,0,0,0.59);
+    box-shadow: -2px 4px 40px -6px rgba(0,0,0,0.59);
+  }
+
+.images {
+    position: relative;
+    width: 25%;
+    border-radius: 50%;
+}
+
+.courses-col {
+    margin-left: 5%;
+}
+
+.caption-2 {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    font-size: 3em;
+    text-shadow: 1px 0 #ffc000;
+    font-weight: 600;
+    color:#ffc000;
+}
+
+.subtitle{
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight:500;
+    color: #636363;
+}
+
+.description-courses {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background: white;
+    color: #636363;
+
+    width: 100%;
+}
+
+.batch {
+    position: relative;
+    width: 100%;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #636363;
+}
+
+.course-rate {
+    position: relative;
+    width: 100%;
+    color: #636363;
+    font-weight: 900;
+    font-size: 22px;;
+    text-shadow: 1.5px 0 #505050;
+    font-family: "Montserrat", Impact;
+}
+
+#batches_avail strong{
+    color: #ffc000;
+}
+
+.prospectus {
+    position: relative;
+    background: none;
+    margin-left: -2%;
+}
+
+#prospectus {
+    color: #636363;
+    padding: 10px 10px;
+    border: 2px solid#ffc000;
+    border-radius: 3px;
+}
+
+#prospectus:focus {
+    border: none;
+    outline: none;
+}
+
+.btn:focus{
+    outline: none !important;
+}
+
+.btn-3 {
+    margin-left: 2%;
+    background: #ffc000;
+}
+
+#add-to-cart  {
+    color:black;
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+
+
+.footer-padding {
+    position: relative;
+    margin-top: 100%;
+    width: 100%;
+    padding: 2% 0;
+    z-index: 9999;
+    background-color: #ffc000;
+}
+
+
+body,#payment-location,#payment-age,#add-to-cart,#prospectus,#bundle-courses,.course-rate,.batch,.description-courses p{
+    font-family: "Montserrat",sans-serif;
+}
+
+
+
+@media (max-width:600px) {
+
+  .description{
+    margin-top: -15%;
+  }
+
+  .video-frame{
+    height: 30vh;
+    width: 80vw;
+  }
+    #btn-1 {
+        padding: 1% 2%;
+        border-radius: 5px;
+    }
+
+    .mobile-courses{
+        display:block;
+    }
+
+
+    .footer-padding,
+    .courses-container {
+        display: none;
+    }
+    .payment>h2 {
+        font-size: 200%;
+        margin-top: 15%;
+      text-align: center;
+    }
+
+    #bundles-description{
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 20px;
+      text-align: center;
+    }
+
+    .images {
+        width: 80%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    .images>button {
+        background: none;
+        border: none;
+        color: #636363;
+        font-size: 150%;
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+    .images>button:focus {
+        outline: none;
+    }
+    .mobile-caption {
+        font-size: 2em;
+        color: #ffc000;
+        text-shadow: 1px 0 #ffc000;
+        margin-bottom: 3%;
+        text-align: center;
+        font-weight: 900;
+
+    }
+
+    .mobile-subtitle{
+        font-size: 120%;
+        color: #636363;
+        margin-bottom: 3%;
+    text-align: center;
+    }
+    .description-courses>p{
+        text-align: center;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        font-size: 100%;
+        width: 100%;
+        padding: 2% 5%;
+    }
+  .payment>p,#combo-of,#bundle-courses,#strike,#rate{
+    text-align: center;
+  }
+
+    .batch{
+        color: #636363;
+        width: 100%;
+        font-size: 120%;
+        text-align: center;
+    }
+
+    .course-rate{
+        font-family: "Montserrat", sans-serif;
+        text-shadow: 1.5px 0 #505050;
+        color: #505050;
+        width: 100%;
+        font-size: 130%;
+       font-weight: 900;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+  .mobile-buttons>span{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+#prospectus-mobile {
+    color: #636363;
+    padding: 10px 10px;
+    border: 2px solid #ffc000;
+    border-radius: 3px;
+   }
+
+#add-to-cart-mobile{
+    padding: 15px 30px;
+    border-radius: 3px;
+    color: black;
+}
+
+}
+
+
