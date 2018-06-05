@@ -37,34 +37,66 @@
                 </div>
 
                 <div class="related-articles">
+                    <div class="article-heading">
+                        <h2><strong>Similar Articles</strong></h2>
+                        <hr>
+                    </div>
 
-                    <div class="related">
+                    <div class="article-item" v-for="item in similar">
+                        <a v-bind:href="'/article/'+item.slug">
+                            <div class="row">
+                                <div class="col-md-4 heading">
 
-                        <div class="article-heading">
-                            <h2><strong>Similar Articles</strong></h2>
-                            <hr>
-                        </div>
+                                    <h3>
+                                        {{item.title}}
+                                    </h3>
 
-                        <div class="row">
-                            <div class="col-md-6" v-for="item in this.similar">
-
-                               <a v-bind:href="'/article/'+item.slug">
-                                <div class="similar-image">
-                                <img v-bind:src="'https://api.guindytimes.com/'+item.image" alt="">
-                                    <div class="overlay">
-                                        <div class="text">Read me...</div>
-                                    </div>
                                 </div>
-                                <div class="authors">
-                                  <h4>{{item.title}}</h4>
-                                </div>
-                               </a>
+                                <div class="col-md-4 content">
 
+                                    <p>
+                                        {{item.preview}}
+                                    </p>
+
+                                </div>
+                                <div class="col-md-4 image">
+                                    <img v-bind:src="'https://api.guindytimes.com/'+item.image" alt="">
+                                </div>
                             </div>
+                        </a>
 
-                        </div>
+                        <hr>
 
                     </div>
+
+
+                    <!--<div class="related">-->
+
+                        <!--<div class="article-heading">-->
+                            <!--<h2><strong>Similar Articles</strong></h2>-->
+                            <!--<hr>-->
+                        <!--</div>-->
+
+                        <!--<div class="row">-->
+                            <!--<div class="col-md-6" v-for="item in this.similar">-->
+
+                               <!--<a v-bind:href="'/article/'+item.slug">-->
+                                <!--<div class="similar-image">-->
+                                <!--<img v-bind:src="'https://api.guindytimes.com/'+item.image" alt="">-->
+                                    <!--<div class="overlay">-->
+                                        <!--<div class="text">Read me...</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="authors">-->
+                                  <!--<h4>{{item.title}}</h4>-->
+                                <!--</div>-->
+                               <!--</a>-->
+
+                            <!--</div>-->
+
+                        <!--</div>-->
+
+                    <!--</div>-->
 
                 </div>
 
