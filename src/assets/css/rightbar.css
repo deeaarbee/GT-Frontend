@@ -30,8 +30,11 @@
     font-weight: 600;
     text-transform:capitalize;
 }
+a, a:hover, a:active, a:visited, a:focus{
+    text-decoration: none;
+}
 
-.news-items ul li a:hover {
+.news-items ul li a:hover{
     color:#C92627;
     text-decoration: none;
 }

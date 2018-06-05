@@ -19,8 +19,8 @@
                     </div>
                     <div class="authors">
                         <ul>
-                            <router-link to=""><li>{{articles.genre}}</li></router-link>
-                            <router-link to=""><li v-for="item in articles.author_list">{{item}}</li></router-link>
+                            <a v-bind:href="'/category/'+articles.genre"><li>{{articles.genre}}</li></a>
+                            <li v-for="item in articles.author_list"><a v-bind:href="'/author/'+item">{{item}}</a></li>
                            <li> {{articles.updated_at}}</li>
                         </ul>
                     </div>
@@ -33,6 +33,25 @@
                         <div v-html=articles.content class="article-content"></div>
 
                     </div>
+                    <div class="tags">
+                       <div class="tagged">
+                        <p><strong>Tagged in :</strong></p>
+                        <ul class="tag-list">
+                            <li v-for="item in articles.tags"><a v-bind:href="'/tag/'+item">{{item}}</a></li>
+                        </ul>
+                       </div>
+
+                        <div class="share">
+                            <div class="tweet">
+                                <a href="#"><p>Tweet</p></a>
+                            </div>
+                            <div class="fb">
+                                <a href="#"><p>fb</p></a>
+                            </div>
+                        </div>
+
+                    </div>
+
                     <hr>
                 </div>
 
@@ -43,7 +62,7 @@
                     </div>
 
                     <div class="article-item" v-for="item in similar">
-                        <a v-bind:href="'/article/'+item.slug">
+                        <a v-bind:href="'/articles/'+item.slug">
                             <div class="row">
                                 <div class="col-md-4 heading">
 

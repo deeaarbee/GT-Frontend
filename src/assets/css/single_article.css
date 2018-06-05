@@ -1,6 +1,10 @@
 .single_article-container{
     margin-left: 15%;
 }
+a, a:hover, a:active, a:visited, a:focus{
+    text-decoration: none;
+}
+
 .single-article .article-heading h2{
     text-align: center;
     padding: 20px 10px 0 10px;
@@ -57,6 +61,58 @@
 .single-article .article-item .content .article-content{
     padding: 20px 100px 0 100px;
     line-height: 30px;
+    font-size: 20px;
+}
+
+.tags {
+    margin-top: 5%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18%;
+}
+.tags .tagged{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+}
+
+.tags p{
+    font-size:18px;
+    color: black;
+}
+
+
+.tag-list{
+    list-style: none;
+    display:inline-flex;
+    padding-left: 5px;
+}
+
+.tag-list li{
+    padding: 0 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.tag-list li a{
+    color: #C92627;
+    font-weight: 600;
+}
+.tag-list li a:hover{
+    color: black;
+}
+
+.share{
+    display: inline-flex;
+    position: absolute;
+    left: 80%;
+}
+.share .tweet p ,.share .fb p{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0 15px;
 }
 
 .single-article .article-item hr {
@@ -70,8 +126,8 @@
 
 
 .related-articles .article-item .image img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 160px;
 }
 
 .related-articles .article-item .heading h3{
@@ -86,6 +142,10 @@
     padding: 20px;
     font-size: 17px;
     color: black;
+}
+
+.related-articles .article-item .heading h3:hover,.related-articles .article-item .content:hover{
+    color:#999999;
 }
 
 /*.related .row .col-md-6 {*/
