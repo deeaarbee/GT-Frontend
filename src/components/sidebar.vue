@@ -14,8 +14,9 @@
                         <li><a href="">Home</a></li>
                         <li><a href="">Tech</a></li>
                         <li><a href="">How tos</a></li>
-                        <li><a href="">C</a></li>
-                        <li><a href="">D</a></li>
+                        <span>-----------------</span>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Guindytimes</a></li>
                     </ul>
                 </div>
                 <div class="box">
