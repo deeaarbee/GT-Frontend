@@ -6,6 +6,7 @@
 }
 
 .article-heading h2{
+    font-family: "Coda",sans-serif;
     text-align: center;
     padding: 20px 10px 0 10px;
 }
@@ -39,7 +40,8 @@
 }
 
 .article-item .row .heading h3{
-    font-size: 20px;
+    font-size: 39px;
+    font-family: "Coda",sans-serif;
     font-weight: 600;
     text-align:left;
     padding-left: 10px;
@@ -63,7 +65,8 @@
 
 
 .article-item .row .content p{
-
+    font-family: "Quicksand",sans-serif;
+    font-weight: lighter;
     font-size: 15px;
     padding: 10px;
 }

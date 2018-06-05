@@ -10,7 +10,7 @@
                     <img id="colg-logo" src="../assets/images/colllogocolor.png" alt="CEG">
                 </div>
                 <div class="gt-tech">
-                    <h1>TECH.GT</h1>
+                    <h1>Tech.GT</h1>
                 </div>
 
                 <div class="nav-items">
@@ -18,6 +18,7 @@
                         <li><a href="">Home</a></li>
                         <li><a href="">Tech</a></li>
                         <li><a href="">How tos</a></li>
+                        <li><a href="">How it works</a></li>
                         <li id="hr"><hr></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Guindytimes</a></li>

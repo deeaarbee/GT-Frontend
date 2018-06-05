@@ -10,6 +10,7 @@ a, a:hover, a:active, a:visited, a:focus{
 }
 
 .single-article .article-heading h2{
+    font-family: "Coda",sans-serif;
     text-align: center;
     padding: 20px 10px 0 10px;
 }
@@ -21,12 +22,15 @@ a, a:hover, a:active, a:visited, a:focus{
 }
 
 .single-article .article-item .heading h1{
+    font-family: "Coda",sans-serif;
+    font-size: 65px;
     margin-top: 2%;
     font-weight: 700;
     text-align: center;
 }
 
 .single-article .article-item .authors ul{
+    font-family: "Coda",sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,9 +140,10 @@ a, a:hover, a:active, a:visited, a:focus{
 }
 
 .related-articles .article-item .heading h3{
+    font-family: "Coda",sans-serif;
     text-align:left;
     padding:25px 0 0 25px;
-    font-size: 18px;
+    font-size: 38px;
     color: black;
     font-weight: 600;
 }
@@ -160,8 +165,10 @@ a, a:hover, a:active, a:visited, a:focus{
 
 
 .related-articles .article-item .content {
+    font-family: "Quicksand",sans-serif;
+
     padding: 20px;
-    font-size: 17px;
+    font-size: 15px;
     color: black;
 }
 
