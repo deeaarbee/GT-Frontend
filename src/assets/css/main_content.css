@@ -57,6 +57,7 @@
 }
 
 .article-item .row .heading .authors ul li{
+    font-family: "Coda",sans-serif;
     text-align: center;
     padding: 0 10px;
     font-size: 12px;
