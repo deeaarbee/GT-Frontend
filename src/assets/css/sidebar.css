@@ -21,9 +21,10 @@
 
 
 .gt-tech h1{
-    font-family:  ;
-    font-size:35px;
+    font-size:30px;
     font-weight: 600;
+    font-family: "Pacifico",sans-serif;
+    letter-spacing: 2px;
 }
 
 .nav-items ul {
@@ -33,15 +34,15 @@
 }
 
 .nav-items ul li {
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .nav-items ul li a{
     font-family: "aktiv-grotesk-std", sans-serif;
     color:black;
-    font-size:18px;
+    font-size:20px;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform:capitalize;
 }
 
 .nav-items ul li a:hover {
