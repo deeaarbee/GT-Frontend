@@ -24,18 +24,17 @@
     font-family: "Orbitron",sans-serif;
     font-size:30px;
     font-weight: 600;
-    /*font-family: "Pacifico",sans-serif;*/
     letter-spacing: 2px;
 }
 
 .nav-items ul {
-    margin-top: 15%;
+    margin-top: 30%;
     list-style: none;
     padding-left: 0;
 }
 
 .nav-items ul li {
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .nav-items ul li a{
@@ -56,7 +55,7 @@
 }
 
 .nav-items ul hr{
-    width: 100px;
+    width: 75px;
     margin: 5px 0;
     border: 1px solid gray;
 }

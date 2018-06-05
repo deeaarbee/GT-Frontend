@@ -19,9 +19,9 @@
                             </h3>
                             <div class="authors">
                                 <ul>
-                                    <li v-for="items in item.author_list" v-if="type==='one' || type==='four'">{{items}}</li>
-                                    <li v-if="type==='two'|| type ==='three' ">{{item.author_list}}</li>
                                     <li> {{item.updated_at}}</li>
+                                    <li v-for="items in item.author_list" v-if="type==='one' || type==='four'"><strong>{{items}}</strong></li>
+                                    <li v-if="type==='two'|| type ==='three' "><strong>{{item.author_list}}</strong></li>
                                 </ul>
                             </div>
 

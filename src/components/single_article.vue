@@ -19,15 +19,15 @@
                     </div>
                     <div class="authors">
                         <ul>
-                            <a v-bind:href="'/category/'+articles.genre"><li>{{articles.genre}}</li></a>
-                            <li v-for="item in articles.author_list"><a v-bind:href="'/author/'+item">{{item}}</a></li>
+                            <a v-bind:href="'/category/'+articles.genre"><li><strong>{{articles.genre}}</strong></li></a>
+                            <li v-for="item in articles.author_list"><a v-bind:href="'/author/'+item"><strong>{{item}}</strong></a></li>
                            <li> {{articles.updated_at}}</li>
                         </ul>
                     </div>
 
-                    <div class="image">
-                        <img v-bind:src="'https://api.guindytimes.com/'+articles.image" alt="">
-                    </div>
+                    <!--<div class="image">-->
+                        <!--<img v-bind:src="'https://api.guindytimes.com/'+articles.image" alt="">-->
+                    <!--</div>-->
                     <div class="content">
 
                         <div v-html=articles.content class="article-content"></div>
@@ -64,15 +64,16 @@
                     <div class="article-item" v-for="item in similar">
                         <a v-bind:href="'/articles/'+item.slug">
                             <div class="row">
-                                <div class="col-md-4 heading">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-3 heading">
 
                                     <h3>
                                         {{item.title}}
                                     </h3>
                                     <div class="authors">
                                         <ul>
-                                            <li v-for="items in item.author_list"><a v-bind:href="'/author/'+items">{{items}}</a></li>
                                             <li>{{item.updated_at}}</li>
+                                            <li v-for="items in item.author_list"><a v-bind:href="'/author/'+items"><strong>{{items}}</strong></a></li>
                                         </ul>
                                     </div>
 
@@ -84,9 +85,10 @@
                                     </p>
 
                                 </div>
-                                <div class="col-md-4 image">
+                                <div class="col-md-3 image">
                                     <img v-bind:src="'https://api.guindytimes.com/'+item.image" alt="">
                                 </div>
+                                <div class="col-md-1"></div>
                             </div>
                         </a>
 

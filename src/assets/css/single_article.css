@@ -49,8 +49,8 @@ a, a:hover, a:active, a:visited, a:focus{
     color: #4f5b66;
 
 }
-.single-article .article-item .authors ul li:hover{
-    color: black;
+.single-article .article-item .authors ul li :hover, .authors ul li a:hover {
+    color: #C92627;
 }
 
 
@@ -87,6 +87,7 @@ a, a:hover, a:active, a:visited, a:focus{
 }
 
 .tags p{
+    font-family: "Coda", sans-serif;
     font-size:18px;
     color: black;
 }
@@ -107,6 +108,7 @@ a, a:hover, a:active, a:visited, a:focus{
 .tag-list li a{
     color: #C92627;
     font-weight: 600;
+    font-family: "Coda", sans-serif;
 }
 .tag-list li a:hover{
     color: black;
@@ -124,25 +126,23 @@ a, a:hover, a:active, a:visited, a:focus{
 }
 
 .single-article .article-item hr {
-    width: 95%;
+    width: 90%;
     border: 0.5px solid gray;
 }
 
 .related-articles .article-item{
     padding: 0 2.5%;
-    height:200px;
 }
 
 
 .related-articles .article-item .image img{
-    width: 200px;
-    height: 160px;
+    width: 260px;
+    height: 200px;
 }
 
 .related-articles .article-item .heading h3{
     font-family: "Coda",sans-serif;
     text-align:left;
-    padding:25px 0 0 25px;
     font-size: 38px;
     color: black;
     font-weight: 600;
@@ -156,12 +156,16 @@ a, a:hover, a:active, a:visited, a:focus{
 
 .related-articles .article-item .row .heading .authors ul li{
     text-align: center;
-    padding: 0;
+    padding:0;
     font-size: 12px;
     text-transform: capitalize;
     color:gray;
+    margin:10px;
 }
 
+.related-articles .article-item .row .heading .authors ul li a:hover{
+    color: #C92627;
+}
 
 
 .related-articles .article-item .content {

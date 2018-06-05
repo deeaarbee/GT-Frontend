@@ -15,21 +15,21 @@
 
                 <div class="nav-items">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Tech</a></li>
-                        <li><a href="">How tos</a></li>
-                        <li><a href="">How it works</a></li>
+                        <li><a v-bind:href="'/category/technology'">Home</a></li>
+                        <li><a v-bind:href="'/tag/tech'">Tech</a></li>
+                        <li><a v-bind:href="'/tag/howto'">How tos</a></li>
+                        <li><a v-bind:href="'/tag/howitworks'">How it works</a></li>
                         <li id="hr"><hr></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Guindytimes</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a target="_blank" href="https://www.guindytimes.com">Guindytimes</a></li>
                     </ul>
                 </div>
-                <div class="box">
-                    <div class="container-1">
-                        <span class="icon"><i class="fa fa-search"></i></span>
-                        <input type="search" id="search" placeholder="Search..." />
-                    </div>
-                </div>
+                <!--<div class="box">-->
+                    <!--<div class="container-1">-->
+                        <!--<span class="icon"><i class="fa fa-search"></i></span>-->
+                        <!--<input type="search" id="search" placeholder="Search..." />-->
+                    <!--</div>-->
+                <!--</div>-->
 
             </div>
 

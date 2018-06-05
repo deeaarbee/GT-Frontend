@@ -8,9 +8,11 @@
 }
 .footer{
     background-color: #3C4142;
-    margin-left:5%;
+    text-align: center;
 }
 .footer .copyright{
+    font-family: "Coda", sans-serif;
     padding-top: 1.2%;
     color: white;
+    font-size: 12px;
 }
