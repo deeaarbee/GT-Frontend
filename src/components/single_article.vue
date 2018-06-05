@@ -5,6 +5,8 @@
         <div class="single_article-container">
 
             <div class="single-article" >
+                <pacman-loader :loading="loading" :color="color" :size="size" ></pacman-loader>
+
 
                 <div class="article-heading">
                     <h2><strong>{{heading}}</strong></h2>
@@ -139,11 +141,14 @@
 <script>
     import sidebar from './sidebar';
     import foot from './foot';
+    import PacmanLoader from 'vue-spinner/src/PacmanLoader.vue'
+
     export default {
         name: "single_article",
         components:{
             sidebar:sidebar,
-            foot:foot
+            foot:foot,
+            PacmanLoader
         },
         data(){
             return{
@@ -153,7 +158,10 @@
                 similar:"",
                 slug:this.$route.params.slug,
                 genre:this.$route.params.genre,
-                scount:4
+                scount:4,
+                loading:true,
+                size:"30px",
+                color:"black"
             }
         },
         created(){
@@ -163,6 +171,7 @@
                 this.heading=data.body.message;
                 this.articles = data.body.data.article;
                 this.similar = data.body.data.similar_articles;
+                this.loading = false;
                 console.log("this.similar",this.similar);
             }).catch(e => {
                 console.log(e);

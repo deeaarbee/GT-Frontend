@@ -4,6 +4,8 @@
         <div class="main_content-container">
 
             <div class="main">
+                <pacman-loader :loading="loading" :color="color" :size="size" ></pacman-loader>
+
 
                 <div class="article-heading">
                     <h2><strong>{{heading}}</strong></h2>
@@ -58,10 +60,13 @@
 
 <script>
     import foot from './foot';
+    import PacmanLoader from 'vue-spinner/src/PacmanLoader.vue'
+
     export default {
         name: "main_content",
         components:{
-            foot:foot
+            foot:foot,
+            PacmanLoader
         },
         data(){
             return{
@@ -72,7 +77,10 @@
                 heading:"",
                 articles:"",
                 authorlist:[],
-                type:""
+                type:"",
+                loading:true,
+                size:"30px",
+                color:"black"
             }
         },
         created(){
@@ -83,6 +91,7 @@
                     this.heading = data.body.message;
                     this.articles = data.body.data;
                     this.type = "one";
+                    this.loading = false;
                 }).catch(e => {
                     console.log(e);
                 });
@@ -95,6 +104,7 @@
                     this.heading = data.body.message;
                     this.articles = data.body.data;
                     this.type = "two";
+                    this.loading = false;
                 }).catch(e => {
                     console.log(e);
                 });
@@ -107,6 +117,7 @@
                     this.heading = data.body.message;
                     this.articles = data.body.data;
                     this.type = "three";
+                    this.loading = false;
                 }).catch(e => {
                     console.log(e);
                 });
@@ -118,6 +129,7 @@
                     this.heading = data.body.message;
                     this.articles = data.body.data;
                     this.type = "four";
+                    this.loading = false;
                 }).catch(e => {
                     console.log(e);
                 });

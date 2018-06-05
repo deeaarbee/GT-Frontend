@@ -6,7 +6,7 @@ import BootstrapVue from 'bootstrap-vue'
 import Routes from './router/routes'
 import store from './store/store'
 import Vue2Filters from 'vue2-filters'
-
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
 
 Vue.use(Vue2Filters)
 Vue.use(VueResource)
