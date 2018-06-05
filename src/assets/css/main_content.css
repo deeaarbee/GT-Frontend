@@ -3,13 +3,17 @@
     margin-right: 20%;
 }
 
-.article-heading {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
+.article-heading h2{
+    text-align: center;
+    padding: 20px 10px 0 10px;
 }
+
+.article-heading hr{
+    border: solid #C92627;
+    border-width: 3px 0 0;
+    width: 180px;
+}
+
 
 .article-item{
    padding: 0 2.5%;

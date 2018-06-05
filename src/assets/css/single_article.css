@@ -1,0 +1,130 @@
+.single_article-container{
+    margin-left: 15%;
+}
+.single-article .article-heading h2{
+    text-align: center;
+    padding: 20px 10px 0 10px;
+}
+
+.article-heading hr{
+    border: solid #C92627;
+    border-width: 3px 0 0;
+    width: 180px;
+}
+
+.single-article .article-item .heading h1{
+    margin-top: 2%;
+    font-weight: 700;
+    text-align: center;
+}
+
+.single-article .article-item .authors ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.single-article .article-item .authors ul li{
+
+    margin: 10px 25px ;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.single-article .article-item .authors ul a{
+    text-decoration: none;
+    color: #4f5b66;
+
+}
+.single-article .article-item .authors ul li:hover{
+    color: black;
+}
+
+
+.single-article .article-item .image{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.single-article .article-item .image img{
+    margin: 1% 0;
+    width: 450px;
+    height: 350px;
+}
+
+.single-article .article-item .content .article-content{
+    padding: 20px 100px 0 100px;
+    line-height: 30px;
+}
+
+.single-article .article-item hr {
+    width: 90%;
+    border: 0.5px solid gray;
+}
+
+.related .row .col-md-6 {
+    padding: 0;
+}
+
+.related .row .col-md-6 a{
+    text-decoration: none;
+    color: black;
+}
+
+.related .row .col-md-6 a:hover{
+
+}
+
+.related .row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.related .row .col-md-6 .similar-image,.related .row .col-md-6 .authors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.related .row .col-md-6 img {
+    width: 250px;
+    height:250px;
+}
+
+.related .row .col-md-6 .authors h4{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgba(18, 21, 27, 0.5);
+}
+
+.similar-image:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}

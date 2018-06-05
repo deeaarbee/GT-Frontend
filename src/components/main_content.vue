@@ -6,13 +6,12 @@
             <div class="main">
 
                 <div class="article-heading">
-
                     <h2><strong>{{heading}}</strong></h2>
-
+                    <hr>
                 </div>
 
                 <div class="article-item" v-for="item in articles">
-                    <a href="#" >
+                    <router-link v-bind:to="'/article/'+item.slug">
                     <div class="row">
                         <div class="col-md-4 heading">
 
@@ -32,7 +31,7 @@
                             <img v-bind:src="'https://api.guindytimes.com/'+item.image" alt="">
                         </div>
                     </div>
-                    </a>
+                    </router-link>
 
                     <hr>
 
