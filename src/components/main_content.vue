@@ -11,13 +11,19 @@
                 </div>
 
                 <div class="article-item" v-for="item in articles">
-                    <router-link v-bind:to="'/articles/'+item.slug">
+                    <a v-bind:href="'/articles/'+item.slug">
                     <div class="row">
                         <div class="col-md-4 heading">
-
                             <h3>
-                                    {{item.title}}
+                                {{item.title}}
                             </h3>
+                            <div class="authors">
+                                <ul>
+                                    <li v-for="items in item.author_list" v-if="type==='one' || type==='four'">{{items}}</li>
+                                    <li v-if="type==='two'|| type ==='three' ">{{item.author_list}}</li>
+                                    <li> {{item.updated_at}}</li>
+                                </ul>
+                            </div>
 
                         </div>
                         <div class="col-md-4 content">
@@ -31,26 +37,32 @@
                             <img v-bind:src="'https://api.guindytimes.com/'+item.image" alt="">
                         </div>
                     </div>
-                    </router-link>
+                    </a>
 
                     <hr>
 
                 </div>
 
-                <div class="load-more">
+                <div class="load-more" v-if="articles.length > 4">
                     <button class="btn" @click="load_more();">Load More</button>
                 </div>
 
             </div>
 
         </div>
+        <br><br><br>
+        <foot></foot>
 
     </div>
 </template>
 
 <script>
+    import foot from './foot';
     export default {
         name: "main_content",
+        components:{
+            foot:foot
+        },
         data(){
             return{
                 count:5,
@@ -59,6 +71,7 @@
                 tag:this.$route.params.tag,
                 heading:"",
                 articles:"",
+                authorlist:[],
                 type:""
             }
         },
@@ -126,7 +139,7 @@
 
                 }
                 else if (this.type === "two"){
-                    this.$http.get(`https://api.guindytimes.com//author?name=` + this.author).then(function (data) {
+                    this.$http.get(`https://api.guindytimes.com/author?name=` + this.author).then(function (data) {
                         console.log(data);
                         this.heading = data.body.message;
                         this.articles = data.body.data;

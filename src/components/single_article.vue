@@ -69,6 +69,12 @@
                                     <h3>
                                         {{item.title}}
                                     </h3>
+                                    <div class="authors">
+                                        <ul>
+                                            <li v-for="items in item.author_list"><a v-bind:href="'/author/'+items">{{items}}</a></li>
+                                            <li>{{item.updated_at}}</li>
+                                        </ul>
+                                    </div>
 
                                 </div>
                                 <div class="col-md-4 content">
@@ -122,16 +128,20 @@
             </div>
 
         </div>
+        <br><br><br>
+        <foot></foot>
 
     </div>
 </template>
 
 <script>
     import sidebar from './sidebar';
+    import foot from './foot';
     export default {
         name: "single_article",
         components:{
-            sidebar:sidebar
+            sidebar:sidebar,
+            foot:foot
         },
         data(){
             return{

@@ -1,11 +1,12 @@
 .sidenav {
+    font-family: "aktiv-grotesk-std",sans-serif;
     height: 100%;
     width:15%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background:whitesmoke;
+    background:white;
     overflow-x: hidden;
     padding: 20px 0 20px 20px;
     color:#C92627;
@@ -13,17 +14,21 @@
 
 
 .nav-logo img {
-    width:50px;
-    height:50px;
+    width:60px;
+    height:60px;
+    margin: 3%;
 }
 
-.nav-logo span{
-    font-size: 100%;
+
+.gt-tech h1{
+    font-size:35px;
+    font-weight: 600;
 }
 
 .nav-items ul {
     margin-top: 15%;
     list-style: none;
+    padding-left: 0;
 }
 
 .nav-items ul li {
@@ -31,15 +36,26 @@
 }
 
 .nav-items ul li a{
+    font-family: "aktiv-grotesk-std", sans-serif;
     color:black;
-    font-size:100%;
-    font-weight: 600;
+    font-size:18px;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
 .nav-items ul li a:hover {
     color:#C92627;
     text-decoration: none;
+}
+
+#hr{
+    padding: 0;
+}
+
+.nav-items ul hr{
+    width: 100px;
+    margin: 5px 0;
+    border: 1px solid gray;
 }
 
 .container-1{

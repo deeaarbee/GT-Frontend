@@ -1,3 +1,7 @@
+.Single_Article{
+    min-height: 89vh;
+    position: relative;
+}
 .single_article-container{
     margin-left: 15%;
 }
@@ -121,7 +125,8 @@ a, a:hover, a:active, a:visited, a:focus{
 }
 
 .related-articles .article-item{
-    padding: 20px;
+    padding: 0 2.5%;
+    height:200px;
 }
 
 
@@ -131,12 +136,28 @@ a, a:hover, a:active, a:visited, a:focus{
 }
 
 .related-articles .article-item .heading h3{
-    text-align: center;
-    padding: 20px;
+    text-align:left;
+    padding:25px 0 0 25px;
     font-size: 18px;
     color: black;
     font-weight: 600;
 }
+
+.related-articles .article-item .row .heading .authors ul {
+    list-style: none;
+    display: inline-flex;
+    padding-left:0
+}
+
+.related-articles .article-item .row .heading .authors ul li{
+    text-align: center;
+    padding: 0;
+    font-size: 12px;
+    text-transform: capitalize;
+    color:gray;
+}
+
+
 
 .related-articles .article-item .content {
     padding: 20px;

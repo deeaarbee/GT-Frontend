@@ -7,14 +7,18 @@
 
                 <div class="nav-logo">
                     <img src="../assets/images/gttrans.png" alt="Guindy Times"/>
-                    <span><strong>Guindy Times</strong></span>
+                    <img id="colg-logo" src="../assets/images/colllogocolor.png" alt="CEG">
                 </div>
+                <div class="gt-tech">
+                    <h1>TECH.GT</h1>
+                </div>
+
                 <div class="nav-items">
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Tech</a></li>
                         <li><a href="">How tos</a></li>
-                        <span>-----------------</span>
+                        <li id="hr"><hr></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Guindytimes</a></li>
                     </ul>

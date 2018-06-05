@@ -14,17 +14,24 @@
     import sidebar from './sidebar';
     import rightbar from './rightbar';
     import main_content from './main_content';
+    import foot from './foot';
     export default {
         name: "home",
         components:{
             sidebar:sidebar,
             rightbar:rightbar,
-            main_content:main_content
+            main_content:main_content,
+            foot:foot
         }
 
     }
 </script>
 
 <style scoped>
+
+    .home-container{
+        min-height: 100%;
+        position: relative;
+    }
 
 </style>
