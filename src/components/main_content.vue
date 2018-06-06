@@ -8,7 +8,6 @@
         <div class="main_content-container">
 
             <div class="main">
-                <!--<pacman-loader :loading="loading" :color="color" :size="size" ></pacman-loader>-->
                 <div class="article-heading">
                     <h2><strong>{{heading}}</strong></h2>
                     <hr>
@@ -65,15 +64,14 @@
     import sidebar from './sidebar';
     import foot from './foot';
     import PacmanLoader from 'vue-spinner/src/PacmanLoader.vue'
-    import {RotateSquare2} from 'vue-loading-spinner'
+    // import {RotateSquare2} from 'vue-loading-spinner'
 
     export default {
         name: "main_content",
         components:{
             sidebar:sidebar,
             foot:foot,
-            PacmanLoader,
-            RotateSquare2
+            PacmanLoader
         },
         data(){
             return{
