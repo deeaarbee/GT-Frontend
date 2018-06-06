@@ -2,7 +2,6 @@
     <div class="Home">
 
         <div class="home-container">
-            <sidebar></sidebar>
             <main_content></main_content>
             <rightbar></rightbar>
         </div>
@@ -32,6 +31,9 @@
     .home-container{
         min-height: 100%;
         position: relative;
+    }
+    [v-cloak] .v-cloak--hidden{
+        display: none;
     }
 
 </style>

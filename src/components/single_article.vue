@@ -1,12 +1,12 @@
 <template>
-    <div class="Single_Article">
-
-        <sidebar></sidebar>
-        <div class="single_article-container">
-
-            <div class="single-article" >
-                <pacman-loader :loading="loading" :color="color" :size="size" ></pacman-loader>
-
+    <div v-cloak>
+        <div class="loader">
+        <pacman-loader :loading="loading" :color="color" :size="size" ></pacman-loader>
+        </div>
+            <div class="Single_Article" v-show =!loading>
+                <sidebar></sidebar>
+                <div class="single_article-container v-cloak--hidden">
+                    <div class="single-article" >
 
                 <div class="article-heading">
                     <h2><strong>{{heading}}</strong></h2>
@@ -98,35 +98,6 @@
 
                     </div>
 
-
-                    <!--<div class="related">-->
-
-                        <!--<div class="article-heading">-->
-                            <!--<h2><strong>Similar Articles</strong></h2>-->
-                            <!--<hr>-->
-                        <!--</div>-->
-
-                        <!--<div class="row">-->
-                            <!--<div class="col-md-6" v-for="item in this.similar">-->
-
-                               <!--<a v-bind:href="'/article/'+item.slug">-->
-                                <!--<div class="similar-image">-->
-                                <!--<img v-bind:src="'https://api.guindytimes.com/'+item.image" alt="">-->
-                                    <!--<div class="overlay">-->
-                                        <!--<div class="text">Read me...</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="authors">-->
-                                  <!--<h4>{{item.title}}</h4>-->
-                                <!--</div>-->
-                               <!--</a>-->
-
-                            <!--</div>-->
-
-                        <!--</div>-->
-
-                    <!--</div>-->
-
                 </div>
 
             </div>
@@ -135,6 +106,7 @@
         <br><br><br>
         <foot></foot>
 
+    </div>
     </div>
 </template>
 
@@ -161,7 +133,7 @@
                 scount:4,
                 loading:true,
                 size:"30px",
-                color:"black"
+                color:"#C92627"
             }
         },
         created(){
@@ -199,6 +171,14 @@
 
 <style scoped>
 
+    .loader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
     @import '../assets/css/single_article.css';
 
 </style>

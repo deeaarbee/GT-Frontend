@@ -1,12 +1,14 @@
 <template>
-    <div class="Main_content">
-
+    <div v-cloak>
+    <div class="loader">
+        <pacman-loader :loading="loading" :color="color" :size="size" ></pacman-loader>
+    </div>
+    <div class="Main_content" v-show=!loading>
+        <sidebar></sidebar>
         <div class="main_content-container">
 
             <div class="main">
-                <pacman-loader :loading="loading" :color="color" :size="size" ></pacman-loader>
-
-
+                <!--<pacman-loader :loading="loading" :color="color" :size="size" ></pacman-loader>-->
                 <div class="article-heading">
                     <h2><strong>{{heading}}</strong></h2>
                     <hr>
@@ -56,17 +58,22 @@
         <foot></foot>
 
     </div>
+    </div>
 </template>
 
 <script>
+    import sidebar from './sidebar';
     import foot from './foot';
     import PacmanLoader from 'vue-spinner/src/PacmanLoader.vue'
+    import {RotateSquare2} from 'vue-loading-spinner'
 
     export default {
         name: "main_content",
         components:{
+            sidebar:sidebar,
             foot:foot,
-            PacmanLoader
+            PacmanLoader,
+            RotateSquare2
         },
         data(){
             return{
@@ -80,7 +87,7 @@
                 type:"",
                 loading:true,
                 size:"30px",
-                color:"black"
+                color:"#C92627"
             }
         },
         created(){
@@ -188,6 +195,11 @@
 
 <style scoped>
 
+    .loader{
+       position:fixed;
+        top: 50%;
+        left: 50%;
+    }
     @import '../assets/css/main_content.css';
 
 </style>
