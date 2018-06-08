@@ -3,7 +3,7 @@
 
         <div class="home-container">
             <main_content></main_content>
-            <rightbar></rightbar>
+            <rightbar class="rightbar"></rightbar>
         </div>
 
     </div>
@@ -36,4 +36,10 @@
         display: none;
     }
 
+
+    @media (max-width:600px) {
+        .rightbar{
+            display: none;
+        }
+    }
 </style>

@@ -4,7 +4,8 @@
         <pacman-loader :loading="loading" :color="color" :size="size" ></pacman-loader>
     </div>
     <div class="Main_content" v-show=!loading>
-        <sidebar></sidebar>
+        <navbar class="navbar"></navbar>
+        <sidebar class="sidebar"></sidebar>
         <div class="main_content-container">
 
             <div class="main">
@@ -46,6 +47,32 @@
 
                 </div>
 
+                <div class="article-item-mob" v-for="item in articles">
+                    <a v-bind:href="'/articles/'+item.slug">
+                        <div class="row">
+                            <div class="col-md-6 heading">
+                                <h3>
+                                    {{item.title}}
+                                </h3>
+                                <div class="authors">
+                                    <ul>
+                                        <li> {{item.updated_at}}</li>
+                                        <li v-for="items in item.author_list" v-if="type==='one' || type==='four'"><strong>{{items}}</strong></li>
+                                        <li v-if="type==='two'|| type ==='three' "><strong>{{item.author_list}}</strong></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 image">
+                                <img v-bind:src="'https://api.guindytimes.com/'+item.image" alt="">
+                            </div>
+                        </div>
+                    </a>
+
+                    <hr>
+
+                </div>
+
                 <div class="load-more" v-if="articles.length > 4">
                     <button class="btn" @click="load_more();">Load More</button>
                 </div>
@@ -53,15 +80,19 @@
             </div>
 
         </div>
+        <rightbar></rightbar>
         <br><br><br>
         <foot></foot>
 
     </div>
+
     </div>
 </template>
 
 <script>
+    import navbar from './navbar';
     import sidebar from './sidebar';
+    import rightbar from './rightbar';
     import foot from './foot';
     import PacmanLoader from 'vue-spinner/src/PacmanLoader.vue'
     // import {RotateSquare2} from 'vue-loading-spinner'
@@ -69,6 +100,8 @@
     export default {
         name: "main_content",
         components:{
+            navbar:navbar,
+            rightbar:rightbar,
             sidebar:sidebar,
             foot:foot,
             PacmanLoader
