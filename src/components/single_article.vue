@@ -158,7 +158,7 @@
                                             </h3>
                                             <div class="authors">
                                                 <ul>
-                                                    <li>{{item.updated_at}}</li>
+                                                    <!--<li>{{item.updated_at}}</li>-->
                                                     <li v-for="items in item.author_list"><a v-bind:href="'/author/'+items"><strong>{{items}}</strong></a></li>
                                                 </ul>
                                             </div>
@@ -253,14 +253,14 @@
             }
         },
         created(){
-            console.log(this.genre);
+          //  console.log(this.genre);
             this.$http.get(`https://api.guindytimes.com/singlearticle?slug=`+this.slug+`&scount=`+this.scount).then(function(data){
-                console.log(data.body);
+            //    console.log(data.body);
                 this.heading=data.body.message;
                 this.articles = data.body.data.article;
                 this.similar = data.body.data.similar_articles;
                 this.loading = false;
-                console.log("this.similar",this.similar);
+              //  console.log("this.similar",this.similar);
             }).catch(e => {
                 console.log(e);
             });

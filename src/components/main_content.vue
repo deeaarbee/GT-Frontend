@@ -125,7 +125,7 @@
 
             if (this.category !== null && this.category  !== undefined && this.category !== ""){
                 this.$http.get(`https://api.guindytimes.com/categoryarticles?category=` + this.category + `&count=` + this.count).then(function (data) {
-                    console.log(data);
+                   // console.log(data);
                     this.heading = data.body.message;
                     this.articles = data.body.data;
                     this.type = "one";
@@ -138,7 +138,7 @@
             else if(this.author !== null && this.author !== undefined && this.author !== "") {
 
                 this.$http.get(`https://api.guindytimes.com/author?name=` + this.author).then(function (data) {
-                    console.log(data);
+                   // console.log(data);
                     this.heading = data.body.message;
                     this.articles = data.body.data;
                     this.type = "two";
@@ -151,7 +151,7 @@
             else if(this.tag !== null && this.tag !== undefined && this.tag !== "") {
 
                 this.$http.get(`https://api.guindytimes.com/tags?tag=` + this.tag + `&acount=` + this.count).then(function (data) {
-                    console.log(data);
+                 //   console.log(data);
                     this.heading = data.body.message;
                     this.articles = data.body.data;
                     this.type = "three";
@@ -163,7 +163,7 @@
             }
             else {
                 this.$http.get(`https://api.guindytimes.com/latestarticles?count=` + this.count).then(function (data) {
-                    console.log(data.body);
+                  //  console.log(data.body);
                     this.heading = data.body.message;
                     this.articles = data.body.data;
                     this.type = "four";
@@ -180,7 +180,7 @@
                 if (this.type==="one"){
 
                     this.$http.get(`https://api.guindytimes.com/categoryarticles?category=` + this.category + `&count=` + this.count).then(function (data) {
-                        console.log(data);
+                      //  console.log(data);
                         this.heading = data.body.message;
                         this.articles = data.body.data;
                     }).catch(e => {
@@ -190,7 +190,7 @@
                 }
                 else if (this.type === "two"){
                     this.$http.get(`https://api.guindytimes.com/author?name=` + this.author).then(function (data) {
-                        console.log(data);
+                     //   console.log(data);
                         this.heading = data.body.message;
                         this.articles = data.body.data;
                     }).catch(e => {
@@ -200,7 +200,7 @@
                 else if (this.type==="three"){
 
                     this.$http.get(`https://api.guindytimes.com/tags?tag=` + this.tag + `&acount=` + this.count).then(function (data) {
-                        console.log(data);
+                    //    console.log(data);
                         this.heading = data.body.message;
                         this.articles = data.body.data;
                     }).catch(e => {
@@ -211,7 +211,7 @@
 
                 else if (this.type === "four"){
                     this.$http.get(`https://api.guindytimes.com/latestarticles?count=` + this.count).then(function (data) {
-                        console.log(data.body);
+                     //   console.log(data.body);
                         this.heading = data.body.message;
                         this.articles = data.body.data;
                     }).catch(e => {

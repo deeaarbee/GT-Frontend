@@ -170,7 +170,6 @@ a, a:hover, a:active, a:visited, a:focus{
 
 .related-articles .article-item .content {
     font-family: "Quicksand",sans-serif;
-
     padding: 20px;
     font-size: 15px;
     color: black;
@@ -330,14 +329,12 @@ a, a:hover, a:active, a:visited, a:focus{
       display: block;
     }
     .tags-mob .tagged{
-        display: flex;
-        align-items: center;
-        margin-left: 2%;
+        text-align: center;
     }
 
     .tags-mob p{
         font-family: "Coda", sans-serif;
-        font-size:15px;
+        font-size:20px;
         color: black;
     }
 

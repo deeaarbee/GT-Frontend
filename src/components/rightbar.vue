@@ -32,7 +32,7 @@
         },
         created(){
             this.$http.get(`https://api.guindytimes.com//hackernews?count=`+this.count).then(function(data){
-                console.log("hacker",data.body);
+               // console.log("hacker",data.body);
                 this.heading=data.body.message;
                 this.news = data.body.data;
             }).catch(e => {
