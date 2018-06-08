@@ -46,18 +46,20 @@
                        </div>
 
                         <div class="share">
-                            <div class="tweet">
-                                <a href="#"><p>Tweet</p></a>
-                            </div>
                             <div class="fb">
-                                <a href="#"><p>fb</p></a>
+                                <!--<a href="#"><p>fb</p></a>-->
+                                <div class="fb-share-button mov-right" v-bind:data-href="'http://tech.guindytimes.com/articles/'+slug " data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fguindytimes.com%2Farticles%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
                             </div>
                         </div>
 
                     </div>
 
-                    <hr>
+                            <hr>
                 </div>
+                        <center>
+                        <div class="fb-comments" v-bind:data-href="'http://tech.guindytimes.com/articles/' + slug " data-numposts="7"></div>
+                        </center>
                         <div class="article-item-mob">
                             <div class="heading">
                                 <h1>
