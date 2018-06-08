@@ -244,3 +244,194 @@ a, a:hover, a:active, a:visited, a:focus{
     /*-ms-transform: translate(-50%, -50%);*/
     /*text-align: center;*/
 /*}*/
+.navbar,.single-article .article-item-mob,.related-articles-mob{
+    display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+    body{
+        min-width: 100%;
+    }
+    .sidebar ,.single-article .article-item,.related-articles{
+        display: none;
+    }
+
+    .navbar,.related-articles-mob ,.single-article .article-item-mob{
+        display: block;
+    }
+    .single_article-container{
+        margin: 0;
+        width: 100%;
+    }
+    .Single_Article{
+        width: 100%;
+        margin: 0;
+        min-height:100%;
+        position: relative;
+    }
+
+
+    .single-article .article-item-mob .heading h1{
+        font-family: "Coda",sans-serif;
+        font-size: 45px;
+        margin-top: 2%;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .single-article .article-item-mob .authors ul{
+        font-family: "Coda",sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .single-article .article-item-mob .authors ul li{
+
+        margin: 10px 10px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .single-article .article-item-mob .authors ul a{
+        text-decoration: none;
+        color: #4f5b66;
+
+    }
+    .single-article .article-item .authors ul li :hover, .authors ul li a:hover {
+        color: #C92627;
+    }
+
+
+    .single-article .article-item .image{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .single-article .article-item .image img{
+        margin: 1% 0;
+        width: 450px;
+        height: 350px;
+    }
+
+    .single-article .article-item-mob .content .article-content{
+        padding: 20px 10px 0 10px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+
+    .tags-mob {
+        margin-top: 10%;
+      display: block;
+    }
+    .tags-mob .tagged{
+        display: flex;
+        align-items: center;
+        margin-left: 2%;
+    }
+
+    .tags-mob p{
+        font-family: "Coda", sans-serif;
+        font-size:15px;
+        color: black;
+    }
+
+    .tag-list-mob{
+        list-style: none;
+        display:inline-flex;
+        padding-left:0;
+    }
+
+    .tag-list-mob li{
+        padding-left:10px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .tag-list-mob li a{
+        color: #C92627;
+        font-weight: 600;
+        font-family: "Coda", sans-serif;
+    }
+    .tag-list-mob li a:hover{
+        color: black;
+    }
+
+    .share-mob{
+        margin-top: 5%;
+        display: inline-flex;
+    }
+    .share-mob .tweet p ,.share .fb p{
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    .related-articles .article-item{
+        display: block;
+    }
+    .article-item-mob{
+        display: block;
+    }
+
+    .article-item-mob{
+        padding: 0;
+    }
+
+    .article-item-mob a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .article-item-mob a:hover{
+        color: #999999;
+    }
+
+    .article-item-mob .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0 5px;
+        margin: 0;
+    }
+
+    .article-item-mob .row .col-md-6{
+        padding: 0 5px;
+    }
+    .article-item-mob .row .heading h3{
+        font-size: 30px;
+        font-family: "Coda",sans-serif;
+        font-weight: 600;
+        text-align:left;
+    }
+
+    .article-item-mob .row .heading {
+        display: block;
+    }
+
+    .article-item-mob .row .heading .authors ul {
+        list-style: none;
+        display: inline-flex;
+        padding-left:0
+    }
+
+    .article-item-mob .row .heading .authors ul li{
+        font-family: "Coda",sans-serif;
+        text-align: center;
+        padding: 0;
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .article-item-mob .col-md-6 img{
+        width: 120px;
+        height: 120px;
+    }
+
+
+}
