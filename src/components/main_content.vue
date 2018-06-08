@@ -162,7 +162,7 @@
 
             }
             else {
-                this.$http.get(`https://api.guindytimes.com/latestarticles?count=` + this.count).then(function (data) {
+                this.$http.get(`https://api.guindytimes.com/categoryarticles?category=technology&count=` + this.count).then(function (data) {
                   //  console.log(data.body);
                     this.heading = data.body.message;
                     this.articles = data.body.data;
@@ -230,6 +230,17 @@
        position:fixed;
         top: 50%;
         left: 50%;
+    }
+    @media screen and (max-width: 700px){
+        .loader{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+        }
     }
     @import '../assets/css/main_content.css';
 

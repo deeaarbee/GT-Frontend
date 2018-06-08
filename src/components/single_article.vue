@@ -295,6 +295,17 @@
         left: 50%;
         top: 50%;
     }
+    @media screen and (max-width: 700px){
+        .loader{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+        }
+    }
     @import '../assets/css/single_article.css';
 
 </style>
