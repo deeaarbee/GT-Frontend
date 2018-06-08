@@ -6,15 +6,15 @@
     top: 0;
     right: 0;
     background:whitesmoke;
-    overflow-x: hidden;
-    padding: 20px 0 20px 20px;
+    overflow: hidden;
+    padding: 10px 0 20px 20px;
     color:#C92627;
     font-family: "Coda",sans-serif;
 }
 
 
 .news-items ul {
-    margin-top: 10%;
+    margin-top: 5%;
     list-style: none;
     padding-left: 0;
 }
@@ -50,7 +50,7 @@ a, a:hover, a:active, a:visited, a:focus{
         top: 0;
         right: 0;
         background:whitesmoke;
-        overflow-x: hidden;
+        overflow: hidden;
         padding: 20px 0 20px 20px;
         color:#C92627;
         font-family: "Coda",sans-serif;
