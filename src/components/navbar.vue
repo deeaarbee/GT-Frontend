@@ -45,7 +45,7 @@
         </li>
         <li>
           <div id="register">
-            <a href="#" style="text-decoration: none;"><span class="hover1" id="reg">About</span></a>
+            <a v-bind:href="'/about'" style="text-decoration: none;"><span class="hover1" id="reg">About</span></a>
           </div>
         </li>
         <li>
