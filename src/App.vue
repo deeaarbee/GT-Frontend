@@ -2,6 +2,7 @@
   <div class="main">
     <transition name="fade">
       <router-view></router-view>
+      <!--<home></home>-->
     </transition>
   </div>
 </template>

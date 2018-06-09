@@ -3,7 +3,6 @@
 
         <div class="home-container">
             <main_content></main_content>
-            <!--<rightbar class="rightbar"></rightbar>-->
         </div>
 
     </div>

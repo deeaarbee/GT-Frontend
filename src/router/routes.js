@@ -1,5 +1,6 @@
-import  home from '../components/home'
-import  about from '../components/about'
+import home from '../components/home'
+import app from '../App'
+import about from '../components/about'
 import single_article from '../components/single_article'
 
 export default[
