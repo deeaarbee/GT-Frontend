@@ -119,10 +119,15 @@ a, a:hover, a:active, a:visited, a:focus{
     position: absolute;
     left: 80%;
 }
-.share .tweet p ,.share .fb p{
-    text-transform: uppercase;
-    font-size: 15px;
-    padding: 0 15px;
+.share .fb{
+    margin-top: -5%;
+}
+
+.fb-com{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
 }
 
 .single-article .article-item hr {
@@ -243,7 +248,7 @@ a, a:hover, a:active, a:visited, a:focus{
     /*-ms-transform: translate(-50%, -50%);*/
     /*text-align: center;*/
 /*}*/
-.navbar,.single-article .article-item-mob,.related-articles-mob{
+.navbar,.single-article .article-item-mob,.related-articles-mob,.fb-com-mob{
     display: none;
 }
 
@@ -256,7 +261,7 @@ a, a:hover, a:active, a:visited, a:focus{
         display: none;
     }
 
-    .navbar,.related-articles-mob ,.single-article .article-item-mob{
+    .navbar,.related-articles-mob ,.single-article .article-item-mob,.fb-com-mob{
         display: block;
     }
     .single_article-container{
@@ -360,13 +365,14 @@ a, a:hover, a:active, a:visited, a:focus{
     }
 
     .share-mob{
-        margin-top: 5%;
-        display: inline-flex;
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1%;
     }
-    .share-mob .tweet p ,.share .fb p{
-        text-transform: uppercase;
-        font-size: 15px;
-        padding: 0 15px;
+
+    .fb-com-mob{
+        margin-top:5%;
     }
 
     .related-articles .article-item{
