@@ -4,7 +4,7 @@ import about from '../components/about'
 import single_article from '../components/single_article'
 
 export default[
-    {path:'/',component:home},
+    {path:'/',component:about},
     {path:'/about',component:about},
     {path:'/category/:category',component:home},
     {path:'/author/:author',component:home},
