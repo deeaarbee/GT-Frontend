@@ -15,10 +15,10 @@
 
                 <div class="nav-items">
                     <ul>
-                        <li><a v-bind:href="'/category/technology'">Home</a></li>
-                        <li><a v-bind:href="'/tag/tech'">Tech</a></li>
-                        <li><a v-bind:href="'/tag/howto'">How tos</a></li>
-                        <li><a v-bind:href="'/tag/howitworks'">How it works</a></li>
+                        <li><router-link to="'/category/technology'">Home</router-link></li>
+                        <li><router-link to="'/tag/tech'">Tech</router-link></li>
+                        <li><router-link to="'/tag/howto'">How tos</router-link></li>
+                        <li><router-link to="'/tag/howitworks'">How it works</router-link></li>
                         <li id="hr"><hr></li>
                         <li><router-link to="/about">About</router-link></li>
                         <li><a target="_blank" href="https://www.guindytimes.com">Guindytimes</a></li>
