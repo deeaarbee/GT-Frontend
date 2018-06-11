@@ -20,7 +20,7 @@
                         <li><a v-bind:href="'/tag/howto'">How tos</a></li>
                         <li><a v-bind:href="'/tag/howitworks'">How it works</a></li>
                         <li id="hr"><hr></li>
-                        <li><a v-bind:href="'/about'">About</a></li>
+                        <li><router-link to="/about">About</router-link></li>
                         <li><a target="_blank" href="https://www.guindytimes.com">Guindytimes</a></li>
                     </ul>
                 </div>
