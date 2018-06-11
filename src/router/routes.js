@@ -8,6 +8,6 @@ export default[
     {path:'/about',component:about},
     {path:'/category/:category',component:home},
     {path:'/author/:author',component:home},
-    {path:'/tag/:tag',component:home},
+    {path:'/tag',component:home},
     {path:'/articles/:slug',component:single_article},
 ]

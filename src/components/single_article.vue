@@ -97,7 +97,6 @@
                                     <div class="fb">
                                         <div class="fb-share-button mov-right" v-bind:data-href="'http://tech.guindytimes.com/articles/'+slug " data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fguindytimes.com%2Farticles%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
                                     </div>
-                                </div>
                                 <div class="fb-com-mob">
                                     <div class="fb-comments" v-bind:data-href="'http://tech.guindytimes.com/articles/' + slug " data-numposts="7"></div>
                                 </div>
