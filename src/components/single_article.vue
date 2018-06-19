@@ -23,8 +23,8 @@
                     </div>
                     <div class="authors">
                         <ul>
-                            <a v-bind:href="'/category/'+articles.genre"><li><strong>{{articles.genre}}</strong></li></a>
-                            <li v-for="item in articles.author_list"><a v-bind:href="'/author/'+item"><strong>{{item}}</strong></a></li>
+                            <a v-bind:href="'/#/category/'+articles.genre"><li><strong>{{articles.genre}}</strong></li></a>
+                            <li v-for="item in articles.author_list"><a v-bind:href="'/#/author/'+item"><strong>{{item}}</strong></a></li>
                            <li> {{articles.updated_at}}</li>
                         </ul>
                     </div>
@@ -41,7 +41,7 @@
                        <div class="tagged">
                         <p><strong>Tagged in :</strong></p>
                         <ul class="tag-list">
-                            <li v-for="item in articles.tags"><a v-bind:href="'/tag/'+item">{{item}}</a></li>
+                            <li v-for="item in articles.tags"><a v-bind:href="'/#/tag/'+item">{{item}}</a></li>
                         </ul>
                        </div>
 
@@ -71,8 +71,8 @@
                             </div>
                             <div class="authors">
                                 <ul>
-                                    <a v-bind:href="'/category/'+articles.genre"><li><strong>{{articles.genre}}</strong></li></a>
-                                    <li v-for="item in articles.author_list"><a v-bind:href="'/author/'+item"><strong>{{item}}</strong></a></li>
+                                    <a v-bind:href="'/#/category/'+articles.genre"><li><strong>{{articles.genre}}</strong></li></a>
+                                    <li v-for="item in articles.author_list"><a v-bind:href="'/#/author/'+item"><strong>{{item}}</strong></a></li>
                                     <li> {{articles.updated_at}}</li>
                                 </ul>
                             </div>
@@ -89,7 +89,7 @@
                                 <div class="tagged">
                                     <p><strong>Tagged in :</strong></p>
                                     <ul class="tag-list-mob">
-                                        <li v-for="item in articles.tags"><a v-bind:href="'/tag/'+item">{{item}}</a></li>
+                                        <li v-for="item in articles.tags"><a v-bind:href="'/#/tag/'+item">{{item}}</a></li>
                                     </ul>
                                 </div>
 
@@ -113,7 +113,7 @@
                     </div>
 
                     <div class="article-item" v-for="item in similar">
-                        <a v-bind:href="'/articles/'+item.slug">
+                        <a v-bind:href="'/#/articles/'+item.slug">
                             <div class="row">
                                 <div class="col-md-1"></div>
                                 <div class="col-md-3 heading">
@@ -124,7 +124,7 @@
                                     <div class="authors">
                                         <ul>
                                             <li>{{item.updated_at}}</li>
-                                            <li v-for="items in item.author_list"><a v-bind:href="'/author/'+items"><strong>{{items}}</strong></a></li>
+                                            <li v-for="items in item.author_list"><a v-bind:href="'/#/author/'+items"><strong>{{items}}</strong></a></li>
                                         </ul>
                                     </div>
 
@@ -154,7 +154,7 @@
                                 <hr>
                             </div>
                             <div class="article-item-mob" v-for="item in similar">
-                                <a v-bind:href="'/articles/'+item.slug">
+                                <a v-bind:href="'/#/articles/'+item.slug">
                                     <div class="row">
                                         <div class="col-md-6 heading">
                                             <h3>
@@ -163,7 +163,7 @@
                                             <div class="authors">
                                                 <ul>
                                                     <!--<li>{{item.updated_at}}</li>-->
-                                                    <li v-for="items in item.author_list"><a v-bind:href="'/author/'+items"><strong>{{items}}</strong></a></li>
+                                                    <li v-for="items in item.author_list"><a v-bind:href="'/#/author/'+items"><strong>{{items}}</strong></a></li>
                                                 </ul>
                                             </div>
 
@@ -223,6 +223,7 @@
         <br><br><br>
         <foot></foot>
 
+    </div>
     </div>
     </div>
 </template>

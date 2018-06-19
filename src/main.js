@@ -14,8 +14,7 @@ Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 Vue.component('v-select', VueSelect.VueSelect);
 const router = new VueRouter ({
-  routes:Routes,
-  mode:'history'
+  routes:Routes
 });
 
 new Vue({

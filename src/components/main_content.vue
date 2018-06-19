@@ -15,7 +15,7 @@
                 </div>
 
                 <div class="article-item" v-for="item in articles">
-                    <a v-bind:href="'/articles/'+item.slug">
+                    <a v-bind:href="'/#/articles/'+item.slug">
                     <div class="row">
                         <div class="col-md-4 heading">
                             <h3>
@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="article-item-mob" v-for="item in articles">
-                    <a v-bind:href="'/articles/'+item.slug">
+                    <a v-bind:href="'/#/articles/'+item.slug">
                         <div class="row">
                             <div class="col-md-6 heading">
                                 <h3>

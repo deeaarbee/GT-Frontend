@@ -20,18 +20,18 @@
       <ul class="nav navbar-nav navbar-left">
         <li>
           <div id="abt-us">
-            <a v-bind:href="'/category/technology'" style="text-decoration: none;"><span class="hover1">Home</span></a>
+            <a v-bind:href="'/#/category/technology'" style="text-decoration: none;"><span class="hover1">Home</span></a>
           </div>
         </li>
 
         <li>
           <div id="gallery">
-            <a v-bind:href="'/tag/tech'"  style="text-decoration: none;"><span class="hover1">Tech</span></a>
+            <a v-bind:href="'/#/tag/tech'"  style="text-decoration: none;"><span class="hover1">Tech</span></a>
           </div>
         </li>
         <li>
           <div id="test">
-            <a v-bind:href="'/tag/howto'"  style="text-decoration: none;"><span class="hover1">How tos</span></a>
+            <a v-bind:href="'/#/tag/howto'"  style="text-decoration: none;"><span class="hover1">How tos</span></a>
           </div>
         </li>
 
@@ -40,12 +40,12 @@
 
         <li>
           <div id="academy">
-            <a v-bind:href="'/tag/howitworks'" style="text-decoration: none;"><span class="hover1">How it works</span></a>
+            <a v-bind:href="'/#/tag/howitworks'" style="text-decoration: none;"><span class="hover1">How it works</span></a>
           </div>
         </li>
         <li>
           <div id="register">
-            <a v-bind:href="'/about'" style="text-decoration: none;"><span class="hover1" id="reg">About</span></a>
+            <a v-bind:href="'/#/about'" style="text-decoration: none;"><span class="hover1" id="reg">About</span></a>
           </div>
         </li>
         <li>
