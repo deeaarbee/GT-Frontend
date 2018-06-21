@@ -1,0 +1,25 @@
+
+> warhorse-summer-academy@1.0.0 dev /root/GT-Frontend
+> cross-env NODE_ENV=development webpack-dev-server --open --hot
+
+Project is running at [1m[34mhttp://localhost:8080/[39m[22m
+webpack output is served from [1m[34m/dist/[39m[22m
+404s will fallback to [1m[34m/index.html[39m[22m
+Unable to open browser. If you are running in a headless environment, please do not use the open flag.
+Serving HTTP on 0.0.0.0 port 5007 ...
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 235, in <module>
+    test()
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 231, in test
+    BaseHTTPServer.test(HandlerClass, ServerClass)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 610, in test
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 231, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 150, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
